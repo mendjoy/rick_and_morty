@@ -1,0 +1,13 @@
+.characters-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.characters-container a {
+    text-decoration: none;
+}
+
+.characters-container img {
+    width: 250px;
+    border-radius: 15px;
+}

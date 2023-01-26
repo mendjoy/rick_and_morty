@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Melting';
+  src: local('Melting'), url(../src/fonts/SHLOP.ttf) format('truetype');
+}
