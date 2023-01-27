@@ -7,8 +7,14 @@
     }
 }
 
+.navbar_container{
+    background-color: #494047cc;
+    box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.096);
+}
+
 .navbar{
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
 }
 .navbar .logo {
     text-decoration: none;
@@ -17,6 +23,7 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     animation: neon 3s alternate infinite ease-in-out;
+    flex-grow: 1;
 }
 
 .navbar .logo:hover{
@@ -29,22 +36,62 @@
 .navbar .logo h1 {
     padding: 15px; 
     color: #2f9331;
-    margin-left: 15px;
-    margin-bottom: 20px;
+    margin: 30px 30px 0 30px;
 }
 
+.form{
+    justify-content: end;
+    width: 300px;
+    margin: 45px auto;
+}
 
-.navbar .navbar_link a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.form input{
     padding: 10px;
-    font-size: 1.5rem;
-    margin: 5px;
-    transition: .5s;
+    border: 2px solid #fff;
+    
 }
 
-.navbar .navbar_link a:hover{
+.form .input_text{
+    border-radius: 5px 0 0 5px;
+}
+
+.form .input_text:focus{
+    outline: 0;
+
+}
+
+.form .btn{
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    height: 38.5px;
+    width: 30px;
+    font-size: .8rem;
+}
+
+
+.form .btn:hover{
+    background-color: rgb(206, 197, 197);
+}
+
+.navbar_links{
+    display: flex;
+    justify-content: end;
+}
+.navbar_links a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px;
+   
+}
+
+.navbar_links a:hover{ 
     color: black;
-    text-shadow: 5px 5px 15px #00ff15;
 }
