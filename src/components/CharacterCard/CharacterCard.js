@@ -2,14 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 //css 
-import "./CharacterCard.css";
+import  styles from "./CharacterCard.module.css";
 
 const CharacterCard = ({character}) => {
+
+  console.log(character)
   return (
 
-    <div className="character-card">
-      <Link to={`/info/${character.id}`}className="character-link">
-        <img src={character.image} alt="" />
+    <div className={styles.card}>
+      <Link to={`/info/${character.id}`}>
+        <img src={character.image} alt={character.name}/>
         <h2>{character.name}</h2>
       </Link>
     </div>

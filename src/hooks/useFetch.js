@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
  export const useFetch = () => {
 
     const [characters, setCharacters] = useState([]);
-    
+
     const url = "https://rickandmortyapi.com/api/character";
 
     const fetchDataCharacters = (url) => {
@@ -15,12 +15,12 @@ import { useState, useEffect } from "react"
 
     useEffect(() => {
         fetchDataCharacters(url);
+        
     },[])
 
-
-    return { characters }
+   return { characters }
   
 }
 
-export default useFetch
+
 

@@ -8,3 +8,7 @@
   font-family: 'Melting';
   src: local('Melting'), url(../src/fonts/SHLOP.ttf) format('truetype');
 }
+
+body{
+  background-color: #3d373c;
+}

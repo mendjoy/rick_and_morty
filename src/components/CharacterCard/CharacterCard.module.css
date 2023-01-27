@@ -1,0 +1,24 @@
+.card h2{
+    color: #fff;
+    text-align: center;
+    
+}
+
+.card {
+    transition: .5s;
+    margin: 25px auto;
+
+}
+
+.card:hover{
+    scale: 1.1;
+    font-family: "Melting"; 
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 5px 5px 15px #00ff15;
+   
+}
+
+
+
+
