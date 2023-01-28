@@ -1,0 +1,15 @@
+.search_container{
+    color: #fff;
+}
+
+.search_container .title, .search_container .p{
+   margin: 25px;
+}
+
+.search_container .title span{
+    text-transform: uppercase;
+    color: #0daa0d;
+}
+.character{
+    margin: 0 auto -20px auto;
+}

@@ -48,6 +48,7 @@ const Navbar = () => {
     <div className={styles.navbar_links}>
         <Link to="/">Characters</Link>
         <Link to="/location">Locations</Link>
+        <Link to="/episodes">Episodes</Link>
     </div>
   </div>
   )
