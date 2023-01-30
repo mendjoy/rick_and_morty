@@ -1,5 +1,4 @@
 import React from 'react';
-import { useFetch } from '../../hooks/useFetch';
 
 //css
 import styles from "./Pagination.module.css";
@@ -15,8 +14,6 @@ const Pagination = ({prev, next, onNext, onPrevious}) => {
 
     };
 
-   
-
   return (
     <div>
         <ul className={styles.pagination}>
@@ -26,11 +23,7 @@ const Pagination = ({prev, next, onNext, onPrevious}) => {
                         <button onClick={handlePrevious}>Prev</button>
                     </li>
                 ) : null }
-           
-            <li className={styles.button}>
-                {}
-
-            </li>
+    
 
             { next ? (
                 <li className={styles.button_container}>
