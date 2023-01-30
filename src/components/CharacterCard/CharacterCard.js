@@ -6,7 +6,6 @@ import  styles from "./CharacterCard.module.css";
 
 const CharacterCard = ({character}) => {
 
-  console.log(character)
   return (
 
     <div className={styles.card}>
