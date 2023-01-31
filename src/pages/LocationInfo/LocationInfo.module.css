@@ -1,0 +1,12 @@
+.container{
+    background-image: url("../../assets/img/portal.png");
+    color: #fff;
+    width:500px;
+    height: 500px;
+    background-size: cover;
+    margin: 25px auto;
+}
+
+.info_contatainer h1{
+    justify-content: center;
+}
