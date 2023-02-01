@@ -11,6 +11,7 @@ import LocationInfo from './pages/LocationInfo/LocationInfo';
 import Search from './pages/Search/Search';
 import Episodes from "./pages/Episodes/Episodes";
 import EpisodeInfo from "./pages/EpisodeInfo/EpisodeInfo";
+import CharactersEpisode from './pages/CharactersEpisode/CharactersEpisode';
 
 function App() {
   return (
@@ -26,9 +27,11 @@ function App() {
             <Route path="/location/:id" element={<LocationInfo/>}/>
             <Route path="/episodes" element={<Episodes/>}/>
             <Route path="/episodes/:id" element={<EpisodeInfo/>}/>
-            
+            <Route path="/charactersepisode" element={<CharactersEpisode/>}/>
             <Route path="/search" element={<Search/>}/>
           </Routes>
+
+          
         </div>
       
       </BrowserRouter>
