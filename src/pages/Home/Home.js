@@ -32,13 +32,13 @@ const Home = () => {
           <CharacterCard key={character.id} 
           character={character}/>)}
 
-    </div>
+        </div>
 
         <Pagination 
-            prev={info.prev} 
-            next={info.next} 
-            onPrevious={onPrevious} 
-            onNext={onNext}/>
+        prev={info.prev} 
+        next={info.next} 
+        onPrevious={onPrevious} 
+        onNext={onNext}/> 
   </div>
   )
 }
