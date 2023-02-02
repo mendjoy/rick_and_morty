@@ -12,7 +12,9 @@ import { useParams } from "react-router-dom";
     const dataEpisode = (url) => {
         fetch(url)
             .then(response => response.json())
-            .then(data => setEpisodeInfo(data))
+            .then(data => {
+                setEpisodeInfo(data);
+            })
             .catch(err => console.log(err))
     };
 

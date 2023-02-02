@@ -11,7 +11,8 @@ import styles from "./Episodes.module.css"
 
 const Episodes = () => {
 
-  const { episodes, info, onNext, onPrevious } = useFetchEpisodes();
+  const { episodes, info, onNext, onPrevious, charactersEpisode } = useFetchEpisodes();
+
 
   return (
     <div>
