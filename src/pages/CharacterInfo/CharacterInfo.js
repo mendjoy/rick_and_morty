@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useCharacter } from '../../hooks/useCharacter';
-import { useLocationDetails } from "../../hooks/useLocationDetails";
 
 //css
 import styles from "./CharacterInfo.module.css"
@@ -9,11 +8,16 @@ import styles from "./CharacterInfo.module.css"
 import { BsCircleFill } from "react-icons/bs";
 import { MdFemale, MdMale } from "react-icons/md";
 
+ //pages
+import LocationInfo from '../LocationInfo/LocationInfo';
+
 const CharacterInfo = () => {
 
-  const { characterInfo } = useCharacter();
-  const { locationInfo } = useLocationDetails();
-
+  const { characterInfo, characterOriginLocation, characterLastLocation} = useCharacter();
+  
+  const idLastLocation = characterLastLocation[5];
+  const idOriginLocation = characterOriginLocation[5];
+  
   return (
 
     <div>
@@ -51,19 +55,25 @@ const CharacterInfo = () => {
               
               </p>
 
-              <p>
+              <p className={styles.location_link}>
                 <span>First seen in: </span>
-                <Link> 
-                  {characterInfo.origin.name}
-                </Link>
-                
+
+                { characterInfo.origin.name === "unknown" && <>{characterInfo.origin.name}</>}
+                { characterInfo.origin.name !== "unknown" && <>
+                  <Link to={`/location/${idOriginLocation}`} > 
+                    {characterInfo.origin.name}
+                  </Link>
+                </>}
               </p> 
 
-
-              <p><span>Last known location: 
-                </span>
-                
-                {characterInfo.location.name}
+              <p><span>Last known location: </span>
+              { characterInfo.location.name === "unknown" && <>{characterInfo.location.name}</>}
+                { characterInfo.location.name !== "unknown" && <>
+                  <Link to={`/location/${idLastLocation}`}> 
+                    {characterInfo.location.name}
+                  </Link>
+                </>}
+            
               </p>
               <p><span>Present in: </span>{characterInfo.episode.length} espisodes</p>
             </div>

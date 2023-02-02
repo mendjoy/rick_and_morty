@@ -13,6 +13,7 @@ const LocationInfo = () => {
   return (
 
     <div className={styles.container}>
+      
        { locationInfo && (
 
       <div className={styles.info_container}> 
