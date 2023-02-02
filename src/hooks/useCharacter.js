@@ -6,13 +6,20 @@ import { useParams } from "react-router-dom";
     const { id } = useParams();
 
     const [characterInfo, setCharacterInfo] = useState(null);
+    const [characterOriginLocation, setCharacterOriginLocation] = useState([])
+    const [characterLastLocation, setCharacterLastLocation] = useState([]);
+
 
     const url = "https://rickandmortyapi.com/api/character";
 
     const dataCharacter = (url) => {
         fetch(url)
             .then(response => response.json())
-            .then(data => setCharacterInfo(data))
+            .then(data => {
+                setCharacterInfo(data);
+                setCharacterOriginLocation((data.origin.url).split("/"));
+                setCharacterLastLocation((data.location.url).split("/"));
+            })
             .catch(err => console.log(err))
     };
 
@@ -22,7 +29,7 @@ import { useParams } from "react-router-dom";
         
     },[])
 
-   return { characterInfo }
+   return { characterInfo, characterOriginLocation, characterLastLocation}
   
 }
 
