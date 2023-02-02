@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    margin: 50px auto;
+    background-color: #24325fff;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 15px;
+    border: 7px solid #000000;
+   
+}
+
+.container .info_container h1 {
+    margin-bottom: 10px;
+}
+
+.container .info_container p {
+    padding: 5px;
+
+}
+
+.container .info_container span{
+    font-weight: bold;
+}
