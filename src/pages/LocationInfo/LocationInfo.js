@@ -12,6 +12,7 @@ const LocationInfo = () => {
 
   return (
 
+    <div className={styles.page}>
     <div className={styles.container}>
       
        { locationInfo && (
@@ -29,6 +30,7 @@ const LocationInfo = () => {
 
         </div>
        )}
+    </div>
     </div>
   )
 }   

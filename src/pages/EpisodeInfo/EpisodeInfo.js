@@ -11,6 +11,7 @@ const EpisodeInfo = () => {
  
   return (
 
+    <div className={styles.page}>
     <div className={styles.container}>
       { episodeInfo && (
         <div className={styles.info_container}>
@@ -23,6 +24,7 @@ const EpisodeInfo = () => {
             
         </div>
       )}
+    </div>
     </div>
   )
 }   

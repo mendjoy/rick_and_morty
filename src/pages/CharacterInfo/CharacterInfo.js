@@ -20,7 +20,7 @@ const CharacterInfo = () => {
   
   return (
 
-    <div>
+    <div className={styles.page}>
        { characterInfo && (
       <div className={styles.container}> 
 

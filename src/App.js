@@ -30,7 +30,6 @@ function App() {
             <Route path="/episodes/:id" element={<EpisodeInfo/>}/>
             <Route path="/search" element={<Search/>}/>
           </Routes>
-
         </div>
       <Footer/>
       
