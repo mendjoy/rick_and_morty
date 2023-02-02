@@ -20,7 +20,7 @@ import { useSearchParams } from "react-router-dom";
 
     useEffect(() => {
 
-        getSearch(`${url}/?name=${query}`);
+        getSearch(`${url}?name=${query}`);
         
     },[query])
 
