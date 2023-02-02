@@ -1,0 +1,16 @@
+.footer{
+    height: 180px;
+    color: #fff;
+    background-color: #494047cc;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.footer div{
+    padding: 80px;
+}
+
+.footer div p span{
+    font-weight: bold;
+}
