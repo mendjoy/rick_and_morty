@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
     const [ locationInfo, setLocationInfo] = useState(null);
 
     const url = "https://rickandmortyapi.com/api/location";
-
+   
     const dataLocation = (url) => {
         fetch(url)
             .then(response => response.json())
