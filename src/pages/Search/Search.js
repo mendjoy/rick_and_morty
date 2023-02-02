@@ -13,18 +13,22 @@ const Search = () => {
 
   const { searchCharacter, query } = useSearch();
 
+  console.log(searchCharacter)
+  console.log()
 
   return (
     <div className={styles.search_container}>
       <h2 className={styles.title}>Results for: <span>{query}</span></h2>  
       <p className={styles.p}>Has been found: {searchCharacter.length} result(s)</p>
 
-      <div className={stylesHome.characters_container}>
+      <div className={stylesHome.characters_container}> 
 
-        {searchCharacter.length > 0 && searchCharacter.map((character) => 
+        {searchCharacter.length > 0 && searchCharacter.map((chara) => 
           <div className={styles.character}>
-            <CharacterCard key={character} character={character}/>
+            <CharacterCard key={chara} character={chara}/>
         </div> ) }
+
+       
       </div>
      
 
