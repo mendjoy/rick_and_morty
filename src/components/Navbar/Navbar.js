@@ -29,7 +29,7 @@ const Navbar = () => {
         <nav className={styles.navbar}>
 
             <Link to={"/"} className={styles.logo}>
-              <h1>Ricky and Morty</h1>
+              <h1>Rick and Morty</h1>
             </Link>
 
             <form onSubmit={handleSubmit} className={styles.form}>
