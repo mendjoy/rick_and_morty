@@ -1,70 +1,40 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+    <img width="200px" src="readme/rickandmorty.png"/>
+</div>
+<h2>Rick and Morty</h2>
 
-## Available Scripts
+<p>Este projeto foi desenvolvido em React utilizando a API pública do <a href="https://rickandmortyapi.com/">Rick and Morty</a>, para o roteamento das páginas foi utilizada a biblioteca React Router Dom.</p><p>Neste projeto é possível obter informações sobre as personagens da série, locais e episódios, é possível também buscar pelas personagens.</p>
 
-In the project directory, you can run:
+<div align="center">
+    <h6>Tela inicial mostrando as personagens, utilizando a navbar para acessar a págna de episódios e locais.</h6>
+    <img width="600px" src="readme/telainicial.gif"/>
+</div>
+<br/>
 
-### `npm start`
+<div align="center">
+    <h6>Informações sobre as personagens, é possível clicar nos locais para obter mais informações.</h6>
+    <img width="600px" src="readme/personagens.gif"/>
+</div>
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
+    <h6>Busca de personagens.</h6>
+    <img width="600px" src="readme/busca.gif"/>
+</div>
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+    <h6>Paginação para exibição de personagens.</h6>
+    <img width="600px" src="readme/pagination.gif"/>
+</div>
+<br/>
 
-### `npm test`
+<p>Para instalar as dependências do projeto utilize o comando abaixo:</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `npm install`
 
-### `npm run build`
+<p>Para rodar o projeto utilize o comando abaixo:</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### `npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
